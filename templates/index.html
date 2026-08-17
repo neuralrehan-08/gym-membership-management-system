@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GymFlow • Rehan Mughal</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><aside><div class="logo">RM</div><h2>GYM<span>FLOW</span></h2><small>Membership Manager</small>
+<nav><a href="#dashboard">⌂ Dashboard</a><a href="#members">♙ Members</a><a href="#analytics">◒ Analytics</a></nav>
+<div class="online">● System Online<br><small>CSV storage connected</small></div></aside>
+<main><header><div><small>GYM MEMBERSHIP MANAGEMENT</small><h1>Good to see you, <b>Rehan.</b></h1><p>Manage your members with a clean, modern dashboard.</p></div><button id="add">＋ Add Member</button></header>
+<section class="cards" id="dashboard"><div><small>Total Members</small><strong id="total">0</strong></div><div><small>Total Revenue</small><strong id="revenue">PKR 0</strong></div><div><small>Male Members</small><strong id="male">0</strong></div><div><small>Female Members</small><strong id="female">0</strong></div></section>
+<section class="grid" id="analytics"><article><h3>Membership Overview</h3><p>Distribution by membership type</p><div id="bars"></div></article><article class="average"><div><span id="avg">PKR 0</span></div><h3>Average Fee</h3><p>Average fee across all records.</p></article></section>
+<section class="panel" id="members"><div class="head"><div><h3>Members</h3><p>Search by name, phone, ID or membership type.</p></div><input id="search" placeholder="⌕  Search members..."></div>
+<div class="table"><table><thead><tr><th>Member</th><th>Phone</th><th>Membership</th><th>Join Date</th><th>Fee</th><th>Gender</th><th></th></tr></thead><tbody id="rows"></tbody></table></div></section></main>
+<div class="modal hidden" id="modal"><div class="dialog"><button class="x" id="close">×</button><small>MEMBER PROFILE</small><h2 id="title">Add New Member</h2>
+<form id="form"><input type="hidden" id="id"><label>Name<input id="name" required></label><label>Phone<input id="phone" required></label><label>Address<input id="address" required></label><div class="two"><label>Entry Fees<input id="fee" type="number" required></label><label>Join Date<input id="date" type="date" required></label></div><div class="two"><label>Membership<select id="type"><option>Monthly</option><option>Quarterly</option><option>Yearly</option></select></label><label>Gender<select id="gender"><option>Male</option><option>Female</option></select></label></div><button>Save Member</button></form></div></div>
+<script src="/static/app.js"></script></body></html>
